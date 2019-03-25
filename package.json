@@ -1,35 +1,39 @@
 {
-	"author": "Renke Grunwald <renke@renke.org> (https://github.com/renke), Coralie Reuter <coreuter@users.noreply.github.com> (https://github.com/coreuter)",
-	"bugs": {
-		"url": "https://github.com/coreuter/import-sort-style-angular/issues"
-	},
-	"description": "A personal style for [import-sort](https://github.com/renke/import-sort) that is focused on angular.",
-	"devDependencies": {
-		"@types/chai": "^4.1.4",
-		"@types/mocha": "^5.2.3",
-		"@types/node": "^10.3.5",
-		"chai": "^4.0.2",
-		"import-sort-style": "^5.0.0",
-		"mocha": "^5.2.0",
-		"ts-node": "^7.0.0",
-		"tslint": "^5.10.0",
-		"typescript": "^2.9.2"
-	},
-	"homepage": "https://github.com/coreuter/import-sort-style-angular#readme",
-	"license": "MIT",
-	"main": "lib/index.js",
-	"name": "import-sort-style-angular",
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/coreuter/import-sort-style-angular.git"
-	},
-	"scripts": {
-		"build": "tsc -p src",
-		"build:watch": "tsc -p src -w",
-		"prepublish": "npm run build",
-		"test": "mocha --require ts-node/register --recursive \"test/**/*.ts\"",
-		"test:watch": "mocha -w --require ts-node/register --recursive \"test/**/*.ts\""
-	},
-	"typings": "lib/index.d.ts",
-	"version": "1.0.0"
+  "author": "Renke Grunwald <renke@renke.org> (https://github.com/renke), Coralie Reuter <coreuter@users.noreply.github.com> (https://github.com/coreuter)",
+  "bugs": {
+    "url": "https://github.com/coreuter/import-sort-style-angular/issues"
+  },
+  "description": "A personal style for [import-sort](https://github.com/renke/import-sort) that is focused on angular.",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.14.3",
+    "chai": "^4.0.2",
+    "import-sort-parser": "^6.0.0",
+    "import-sort-style": "^6.0.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.2.4"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/coreuter/import-sort-style-angular#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "import-sort-style-angular",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/coreuter/import-sort-style-angular.git"
+  },
+  "scripts": {
+    "build": "tsc -p ./src",
+    "build:watch": "tsc -p ./src -w",
+    "prepublishOnly": "npm run build",
+    "test": "mocha --require ts-node/register --recursive \"test/**/*.ts\"",
+    "test:watch": "mocha -w --require ts-node/register --recursive \"test/**/*.ts\""
+  },
+  "typings": "lib/index.d.ts",
+  "version": "1.0.0"
 }
