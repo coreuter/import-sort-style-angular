@@ -35,5 +35,5 @@
     "test:watch": "mocha -w --require ts-node/register --recursive \"test/**/*.ts\""
   },
   "typings": "lib/index.d.ts",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
